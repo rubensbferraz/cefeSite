@@ -1,0 +1,34 @@
+*{
+    font-family: Verdana;
+}
+a{
+    text-decoration: none;
+}
+.appContener{
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    background-color:#faf6f6;
+}
+.cabecalho{
+    display: flex;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    z-index: 10;
+}
+.corpo{
+    display: flex;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cornflowerblue;
+}
+.rodape{
+    display: flex;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkolivegreen;
+}

@@ -1,0 +1,10 @@
+C:\cefeSite\projetos\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.deps.json
+C:\cefeSite\projetos\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.runtimeconfig.json
+C:\cefeSite\projetos\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.runtimeconfig.dev.json
+C:\cefeSite\projetos\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.dll
+C:\cefeSite\projetos\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.pdb
+C:\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.csproj.CoreCompileInputs.cache
+C:\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.AssemblyInfoInputs.cache
+C:\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.AssemblyInfo.cs
+C:\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.dll
+C:\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.pdb
