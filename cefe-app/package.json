@@ -8,7 +8,15 @@
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+  },
+  "lynt": {
+    "typescript": true,
+    "react": true,
+    "ignore": [
+      "tests/**/*.*",
+      "fixtures/**/*.*"
+    ]
   },
   "scripts": {
     "lint": "lynt",
@@ -19,6 +27,7 @@
   },
   "devDependencies": {
     "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1"
+    "enzyme-adapter-react-16": "^1.1.1",
+    "lynt": "^0.2.0"
   }
 }
