@@ -18,7 +18,7 @@ img{
 		margin-left: 3%;
 		margin-top: 6%;
 	}
-	#textologoCEFE{
+	.textologoCEFE{
 		flex: 1;
 		margin-left: 3%;
 		margin-top: 14%;
@@ -28,7 +28,7 @@ img{
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 		background-color: transparent;
 	}
-	#textologoCEFE p{
+	.textologoCEFE p{
 		flex: 1;
 		width:200%;
 		z-index: -1;

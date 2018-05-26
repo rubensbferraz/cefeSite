@@ -9,10 +9,10 @@ class Cabecalho extends Component{
             <Flexbox className="cabecalho">
                 <Flexbox className="app-cabecalho">
                     <Flexbox className="logo">
-                        <Flexbox id="logoCEFE">
+                        <Flexbox className="logoCEFE">
                             <img src="../../../../images/CEFELogo.png" alt='' />
                         </Flexbox>
-                        <Flexbox id="textologoCEFE">
+                        <Flexbox className="textologoCEFE">
                             <span>CEFE<p>Casa Espírita Fratenidade Emanuel</p></span>
                         </Flexbox>
                     </Flexbox>
