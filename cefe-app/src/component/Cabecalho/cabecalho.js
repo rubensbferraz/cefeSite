@@ -7,12 +7,16 @@ class Cabecalho extends Component{
     render(){
         return(
             <Flexbox className="cabecalho">
-                <Flexbox className="app-cabecalho col-xs-12">
-                    <Flexbox className="logo col-xs-6">
-                        <img src="../../../../images/CEFELogo.png" alt='' id="logoCEFE" />
-                        <span id="textologoCEFE" >CEFE<p>Casa Espírita Fratenidade Emanuel</p></span>
+                <Flexbox className="app-cabecalho">
+                    <Flexbox className="logo">
+                        <Flexbox id="logoCEFE">
+                            <img src="../../../../images/CEFELogo.png" alt='' />
+                        </Flexbox>
+                        <Flexbox id="textologoCEFE">
+                            <span>CEFE<p>Casa Espírita Fratenidade Emanuel</p></span>
+                        </Flexbox>
                     </Flexbox>
-                    <Flexbox className="fundoGiraSol col-xs-12">
+                    <Flexbox className="fundoGiraSol">
                         <img alt='' src="../../../../images/fundoCabecalhoGiraSois.png" />
                     </Flexbox>
                 </Flexbox>

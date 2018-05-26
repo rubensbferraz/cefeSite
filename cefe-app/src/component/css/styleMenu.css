@@ -1,4 +1,4 @@
-.container{
+/*.container{
 	display: block;
 	position: relative;
 	margin-top: 80px;
@@ -6,7 +6,7 @@
 }
 
 /*Inicio Configurando o Menu*/
-#navMenu{
+/*#navMenu{
 	display: -webkit-box;
 	display: block;
 	position: absolute;
@@ -16,7 +16,7 @@
 	margin-top: -95px;
 }
 /**Estilizar o Menu e sub-menus*/
-.menuContainer{
+/*.menuContainer{
 	display: block;
 	position: absolute;
 	margin-top: -7px;
