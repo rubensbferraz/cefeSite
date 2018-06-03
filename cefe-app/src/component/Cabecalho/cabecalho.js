@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Menu from './menu.js';
 import './css/cabecalho.css';
 import Flexbox from 'flexbox-react';
 
@@ -19,8 +18,7 @@ class Cabecalho extends Component{
                     <Flexbox className="fundoGiraSol">
                         <img alt='' src="../../../../images/fundoCabecalhoGiraSois.png" />
                     </Flexbox>
-                </Flexbox>
-                <Menu />
+                    </Flexbox>
             </Flexbox>        
         );
     }
