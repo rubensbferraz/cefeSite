@@ -14,7 +14,7 @@ namespace cefeAPI.Controllers
         {
             _palestraRepositorio = palestraRepo;
         }
-
+ 
         [HttpGet]
         public IEnumerable<Palestra> GetAll()
         {

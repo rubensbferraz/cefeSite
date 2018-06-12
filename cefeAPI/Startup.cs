@@ -27,6 +27,7 @@ namespace cefeAPI
         {
             services.AddEntityFrameworkMySql().AddDbContext<PalestraDbContexto>();
             services.AddTransient<IPalestraRepository, PalestraRepository>();
+            services.AddTransient<IUsuarioAdministradorRepository, UsuarioAdministradorRepository>();
             services.AddMvc();
         }
 
