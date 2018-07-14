@@ -13661,11 +13661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\cefeSite\\projetos\\cefeAPI\\cefeAPI.csproj",
+      "projectUniqueName": "C:\\wamp64\\www\\cefeSite\\projetos\\cefeAPI\\cefeAPI.csproj",
       "projectName": "cefeAPI",
-      "projectPath": "C:\\cefeSite\\projetos\\cefeAPI\\cefeAPI.csproj",
+      "projectPath": "C:\\wamp64\\www\\cefeSite\\projetos\\cefeAPI\\cefeAPI.csproj",
       "packagesPath": "C:\\Users\\CarlosRubens\\.nuget\\packages\\",
-      "outputPath": "C:\\cefeSite\\projetos\\cefeAPI\\obj\\",
+      "outputPath": "C:\\wamp64\\www\\cefeSite\\projetos\\cefeAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

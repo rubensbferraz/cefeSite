@@ -46,7 +46,7 @@ const componentMenu = () => {
                             </NavDropdown>
                             <MenuItem eventKey={4.2} >Grupo Mediúnico</MenuItem>
                             <MenuItem eventKey={4.3} >Aplicadores de Passes</MenuItem>
-                            <MenuItem eventKey={4.4} >Bazar</MenuItem>
+                            <MenuItem href={"../../component/paginaInternas/listaUsuario"} eventKey={4.4} >Bazar</MenuItem>
                             <MenuItem eventKey={4.5} >Eventos</MenuItem>
                         </NavDropdown>
                         <NavDropdown eventKey={7} title="Arte" id="arte">
