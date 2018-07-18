@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Servidor } from '../constant';
+import { Servidor } from '../../assest/constant';
 import './palestrasPublicas.css';
 
 class ListaDePalestras extends React.Component{

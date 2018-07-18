@@ -3,7 +3,7 @@ import Flexbox from 'flexbox-react';
 import Menu from './menu/menu';
 //import TelaLogin from '../paginaInternas/telaLogin';
 import './css/corpo.css';
-import { ListaDePalestras } from '../paginasInternas/palestrasPublicas/listaPalestras';
+import {CoordenarPalestras} from '../paginasInternas/palestrasPublicas/addPalestras';
 //import * as Lista from '../assest/util/listaColaboradorMaster';
 //import './menu/styleMenu.css';
 
@@ -15,7 +15,6 @@ class Corpo extends Component {
         }
     }
 
-
     render(){
         return(
             <div className="corpo" >
@@ -23,7 +22,7 @@ class Corpo extends Component {
                     <Menu />              
                 </Flexbox>
                 <Flexbox>
-                    <ListaDePalestras/>
+                    <CoordenarPalestras/>
                 </Flexbox>
             </div>
         );
