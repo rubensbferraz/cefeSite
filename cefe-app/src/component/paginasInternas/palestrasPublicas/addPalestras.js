@@ -8,39 +8,42 @@ class CoordenarPalestras extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            temaPalestra: '',
-            palestrante: '',
-            diretorPalestra: '',
             dataPalestra: '',
-            semana: ''
+            diretorPalestra: '',
+            palestrante: '',
+            semana:'',
+            temaPalestra: ''
         }
+        this.handleSubmit = this.handleSubmit.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
 
     }
 
-    handleChange (event) {
+    handleChange (dataPalestra, diretorPalestra, palestrante, semana, temaPalestra) {
         debugger
         this.setState({
-            temaPalestra: this.state.temaPalestra,
-            palestrante: this.state.palestrante,
-            diretorPalestra: this.state.diretorPalestra,
-            dataPalestra: this.state.dataPalestra,
-            semana: this.state.semana
+            dataPalestra: dataPalestra,
+            diretorPalestra: diretorPalestra,
+            palestrante: palestrante,
+            semana: semana,
+            temaPalestra: temaPalestra
         });
     }
     handleSubmit (event)  { 
         debugger      
         event.preventDefault();
-        axios.post(url,{ 
-            temaPalestra: this.state.temaPalestra,
-            palestrante: this.state.palestrante,
-            diretorPalestra: this.state.diretorPalestra,
+        let teste = {
             dataPalestra: this.state.dataPalestra,
-            semana: this.state.semana       
-                }).then(resposta => {
-            console.log(resposta)
-            console.log(resposta.data)
-        }).catch(error => {console.log(error)})
+            diretorPalestra: this.state.diretorPalestra,
+            palestrante: this.state.palestrante,
+            semana: this.state.semana,
+            temaPalestra: this.state.temaPalestra
+        };
+        axios.post(url ,{ teste}).then(resposta => {
+            console.log(resposta);
+            console.log(resposta.data);
+        })
+        
     }
     render(){
         console.log(url);
@@ -50,24 +53,24 @@ class CoordenarPalestras extends React.Component {
                     <div className="form-row">
                         <div className="form-group col-md-6">
                             <label >Data da Palestra</label>
-                            <input type="Date" name={this.state.dataPalestra} className="form-control" onChange={(e)=> this.handleChange(e.dataPalestra)}/>
+                            <input type="Date" name='dataPalestra' className="form-control" onChange={this.handleChange}/>
                         </div>
                         <div className="form-group col-md-6">
                             <label >Semana da Palestra</label>
-                            <input type="text" name={this.state.semana} className="form-control" onChange={(e)=> this.handleChange(e.semana)}/>
+                            <input type="text" name='semana' className="form-control" onChange={this.handleChange}/>
                         </div>
                     </div>
                     <div className="form-group">
                         <label >Diretor da Reunião Pública</label>
-                        <input type="text" name={this.state.diretorPalestra} className="form-control" onChange={(e)=> this.handleChange(e.diretorPalestra)}/>
+                        <input type="text" name='diretorPalestra' className="form-control" onChange={this.handleChange}/>
                     </div>
                     <div className="form-group">
                         <label >Palestrante Convidado</label>
-                        <input type="text" name={this.state.palestrante} className="form-control" onChange={(e)=> this.handleChange(e.palestrante)}/>
+                        <input type="text" name='palestrante' className="form-control" onChange={this.handleChange}/>
                     </div>
                     <div className="form-group">
                         <label >Tema da Palestra</label>
-                        <input type="text" name={this.state.temaPalestra} className="form-control" onChange={(e)=> this.handleChange(e)}/>
+                        <input type="text" name='temaPalestra' className="form-control" onChange={this.handleChange}/>
                     </div>
                     <button type="submit" className="btn btn-primary">REGISTRAR</button>
                 </form>
