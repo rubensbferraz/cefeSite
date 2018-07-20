@@ -25,6 +25,16 @@ namespace cefeAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors (options => {
+                options.AddPolicy ("AllowAll",
+                    builder => {
+                        builder
+                            .AllowAnyOrigin ()
+                            .AllowAnyMethod ()
+                            .AllowAnyHeader ()
+                            .AllowCredentials ();
+                    });
+            });            
             services.AddEntityFrameworkMySql().AddDbContext<PalestraDbContexto>();
             services.AddTransient<IPalestraRepository, PalestraRepository>();
             services.AddTransient<IUsuarioAdministradorRepository, UsuarioAdministradorRepository>();
@@ -39,6 +49,7 @@ namespace cefeAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors ("AllowAll");
             app.UseMvc();
         }
     }
