@@ -14,8 +14,8 @@ namespace cefeAPI.Models
         public DbSet<UsuarioAdministrador> usuarioadministrador { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
-            //optionsBuilder.UseMySql(@"Server=localhost;port=3306; database=cefeemmanuel1;uid=root;pwd=''");
-            optionsBuilder.UseMySql(@"Server=179.188.16.98;port=3306; database=cefeemmanuel1;uid=cefeemmanuel;pwd='cefe123'");
+            optionsBuilder.UseMySql(@"Server=localhost;port=3306; database=cefeemmanuel1;uid=root;pwd=''");
+            //optionsBuilder.UseMySql(@"Server=179.188.16.98;port=3306; database=cefeemmanuel1;uid=cefeemmanuel;pwd='cefe123'");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -8,42 +8,37 @@ class CoordenarPalestras extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            dataPalestra: '',
-            diretorPalestra: '',
-            palestrante: '',
-            semana:'',
-            temaPalestra: ''
+            value: '',
+            palestra: {
+                dataPalestra: '',
+                diretorPalestra: '',
+                palestrante: '',
+                semana: '',
+                temaPalestra: ''
+            }
         }
         this.handleSubmit = this.handleSubmit.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleChange = this.handleChange.bind(this)
 
     }
 
-    handleChange (dataPalestra, diretorPalestra, palestrante, semana, temaPalestra) {
-        debugger
-        this.setState({
-            dataPalestra: dataPalestra,
-            diretorPalestra: diretorPalestra,
-            palestrante: palestrante,
-            semana: semana,
-            temaPalestra: temaPalestra
-        });
+    handleChange (event) {
+        const { palestra } = this.state;
+        palestra[event.target.name] = event.target.value;
+        this.setState({ palestra });
+        console.log(palestra)
     }
-    handleSubmit (event)  { 
-        debugger      
+    limpaFormulario(){
+        
+    }
+        
+    handleSubmit (event)  {     
         event.preventDefault();
-        let teste = {
-            dataPalestra: this.state.dataPalestra,
-            diretorPalestra: this.state.diretorPalestra,
-            palestrante: this.state.palestrante,
-            semana: this.state.semana,
-            temaPalestra: this.state.temaPalestra
-        };
-        axios.post(url ,{ teste}).then(resposta => {
+        axios.post(url , this.state.palestra).then(resposta => {
             console.log(resposta);
             console.log(resposta.data);
         })
-        
+        this.limpaFormulario();
     }
     render(){
         console.log(url);
