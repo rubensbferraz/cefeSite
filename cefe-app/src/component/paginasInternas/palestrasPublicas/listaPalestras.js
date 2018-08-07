@@ -3,8 +3,14 @@ import axios from 'axios';
 import { Servidor } from '../../assest/constant';
 import './palestrasPublicas.css';
 
+let url = Servidor.palestras;
 class ListaDePalestras extends React.Component{
-    state = {listaPalestra:[]}
+    constructor(props){
+        super(props);
+        this.state = {
+            listaPalestra:[]
+        }
+    }
 
     componentDidMount(){
         axios.get(Servidor.palestras)
@@ -45,4 +51,4 @@ class ListaDePalestras extends React.Component{
     }
 }
 
-export {ListaDePalestras}
+export default ListaDePalestras

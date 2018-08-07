@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import Flexbox from 'flexbox-react';
 import Menu from './menu/menu';
-//import TelaLogin from '../paginaInternas/telaLogin';
+
 import './css/corpo.css';
-import {CoordenarPalestras} from '../paginasInternas/palestrasPublicas/addPalestras';
-//import * as Lista from '../assest/util/listaColaboradorMaster';
-//import './menu/styleMenu.css';
+import Palestra from '../paginasInternas/palestrasPublicas/AdicionaPalestras';
 
 class Corpo extends Component {
     constructor(props){
@@ -14,7 +12,6 @@ class Corpo extends Component {
             listColaborador: ""
         }
     }
-
     render(){
         return(
             <div className="corpo" >
@@ -22,7 +19,7 @@ class Corpo extends Component {
                     <Menu />              
                 </Flexbox>
                 <Flexbox>
-                    <CoordenarPalestras/>
+                    <Palestra/>
                 </Flexbox>
             </div>
         );
