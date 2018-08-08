@@ -64,8 +64,8 @@ class AdicionaPalestras extends Component{
                         <label >Tema da Palestra</label>
                         <input type="text" name='temaPalestra' defaultValue="" className="form-control" onChange={this.handleChange}/>
                     </div>
-                    <button type="submit" className="btn btn-primary">REGISTRAR</button>
                     </div>
+                        <button type="submit" className="btn btn-primary">REGISTRAR</button>
                     </form>
                     <div>
                         <button type="submit" onClick={this.limpaFormulario} className="btn btn-primary">limpa</button>
