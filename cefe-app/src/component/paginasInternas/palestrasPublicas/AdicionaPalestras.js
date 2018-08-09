@@ -46,30 +46,27 @@ class AdicionaPalestras extends Component{
                 <div className="form-row">
                     <div className="form-group col-md-6">
                         <label>Data da Palestra</label>
-                           <input type="Date" name='dataPalestra' defaultValue="" className="form-control" id="dataPalestra" placeholder="Data Para a Palestra" onChange={this.handleChange}/>
+                           <input type="Date" name='dataPalestra' className="form-control" id="dataPalestra" placeholder="Data Para a Palestra" onChange={this.handleChange}/>
                     </div>
                     <div className="form-group col-md-6">
                         <label className="">Semana da Palestra</label>
-                        <input type="text" name='semana' defaultValue="" className="form-control" id="dataPalestra" placeholder="Entre com a Semana" onChange={this.handleChange}/>
+                        <input type="text" name='semana' className="form-control" id="dataPalestra" placeholder="Entre com a Semana" onChange={this.handleChange}/>
                     </div>
                     <div className="form-group">
                         <label >Diretor da Reunião Pública</label>
-                        <input type="text" name='diretorPalestra' defaultValue="" className="form-control" onChange={this.handleChange}/>
+                        <input type="text" name='diretorPalestra' placeholder="Entre com o Diretor da Reunião" className="form-control" onChange={this.handleChange}/>
                     </div>
                     <div className="form-group">
                         <label >Palestrante Convidado</label>
-                        <input type="text" name='palestrante' defaultValue="" className="form-control" onChange={this.handleChange}/>
+                        <input type="text" name='palestrante' placeholder="Entre com o Orador da Noite" className="form-control" onChange={this.handleChange}/>
                     </div>
                     <div className="form-group">
                         <label >Tema da Palestra</label>
-                        <input type="text" name='temaPalestra' defaultValue="" className="form-control" onChange={this.handleChange}/>
+                        <input type="text" name='temaPalestra' placeholder="Entre com o Tema da Noite" className="form-control" onChange={this.handleChange}/>
                     </div>
                     </div>
-                        <button type="submit" className="btn btn-primary">REGISTRAR</button>
+                   <button type="submit" onClick={this.limpaFormulario}  className="btn btn-primary">REGISTRAR</button>
                     </form>
-                    <div>
-                        <button type="submit" onClick={this.limpaFormulario} className="btn btn-primary">limpa</button>
-                    </div>
             </div>
        )
    }

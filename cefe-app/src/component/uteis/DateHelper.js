@@ -15,4 +15,4 @@ class DateHelper{
     }
 }
 
-export {DateHelper}
+export default DateHelper;

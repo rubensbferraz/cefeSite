@@ -2,18 +2,19 @@ import React from 'react';
 import axios from 'axios';
 import { Servidor } from '../../assest/constant';
 import './palestrasPublicas.css';
-
 let url = Servidor.palestras;
-class ListaDePalestras extends React.Component{
+
+class ListaDePalestras extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            listaPalestra:[]
+            listaPalestra:[],
+            data: ''
         }
     }
 
     componentDidMount(){
-        axios.get(Servidor.palestras)
+        axios.get(url)
         .then(resposta => {
             const listaPalestra = resposta.data;
             this.setState({ listaPalestra})
