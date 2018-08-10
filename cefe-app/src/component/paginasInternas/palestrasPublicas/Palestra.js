@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+// @ts-ignore
+import img from './imagem/logoTab.png';
+import './palestrasPublicas.css';
 
 class Palestra extends Component {
     constructor(props){
@@ -10,9 +13,13 @@ class Palestra extends Component {
     render(){
         return(
             <div className="containerTabela">
-                <table className="table table-active table-sm">
+                <div className="cabecaTab">
+                    <p className="logoTab"><img alt="" src={img}></img></p>
+                    <p className="nomeCasa"><span>CEFE</span>Casa Espírita Fraternidade Emmanuel</p>
+                    <p className="txtPl">Escala de Palestras</p>
+                </div>
+                <table id="tbPalestra" className="table table-active table-sm">
                     <thead>
-                        <p><img alt="" src="./imagem/LgTabPalestra.png"></img></p>
                         <tr className="titulosColunas">
                             <th scope="col">Data</th>
                             <th scope="col">Diretor</th>
