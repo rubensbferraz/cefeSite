@@ -8,3 +8,13 @@ C:\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.AssemblyInfoInputs.
 C:\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.AssemblyInfo.cs
 C:\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.dll
 C:\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.pdb
+C:\wamp64\www\cefeSite\projetos\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.deps.json
+C:\wamp64\www\cefeSite\projetos\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.runtimeconfig.json
+C:\wamp64\www\cefeSite\projetos\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.runtimeconfig.dev.json
+C:\wamp64\www\cefeSite\projetos\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.dll
+C:\wamp64\www\cefeSite\projetos\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.pdb
+C:\wamp64\www\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.csproj.CoreCompileInputs.cache
+C:\wamp64\www\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.AssemblyInfoInputs.cache
+C:\wamp64\www\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.AssemblyInfo.cs
+C:\wamp64\www\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.dll
+C:\wamp64\www\cefeSite\projetos\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.pdb
