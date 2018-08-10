@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import Flexbox from 'flexbox-react';
-import Menu from './menu/menu';
+//import Menu from './menu/menu';
 
 import './css/corpo.css';
-import Palestra from '../paginasInternas/palestrasPublicas/ListaPalestras';
+import Palestra from '../paginasInternas/palestrasPublicas/Palestra';
 
 class Corpo extends Component {
     constructor(props){
@@ -16,7 +16,7 @@ class Corpo extends Component {
         return(
             <div className="corpo" >
                 <Flexbox>      
-                    <Menu />              
+                    
                 </Flexbox>
                 <Flexbox>
                     <Palestra/>
