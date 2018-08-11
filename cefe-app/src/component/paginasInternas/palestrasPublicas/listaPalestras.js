@@ -19,10 +19,13 @@ class ListaDePalestras extends React.Component {
             const listaPalestra = resposta.data;
             this.setState({ listaPalestra})
         })
+        
     }
 
     render(){
-        let {listaPalestra} = this.state;
+        let listaPalestra = this.state.listaPalestra;
+        const teste = listaPalestra.map(d => d.dataPalestra).join();
+        console.log(teste);
         return(
             <div className="contener_tabelaPalestra">
                 <table className="table table-responsive">
@@ -37,7 +40,7 @@ class ListaDePalestras extends React.Component {
                     </thead>
                     <tbody>
                         {listaPalestra.map(lista =>
-                        <tr key= {lista.idPalestra}> 
+                            <tr key={lista.idPalestra}> 
                             <td>{lista.dataPalestra}</td>
                             <td>{lista.diretorPalestra}</td>
                             <td>{lista.palestrante}</td>
