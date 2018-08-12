@@ -11,8 +11,8 @@ using System;
 namespace cefeAPI.Migrations
 {
     [DbContext(typeof(PalestraDbContexto))]
-    [Migration("20180611212805_InicialCreate")]
-    partial class InicialCreate
+    [Migration("20180812192210_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,7 +26,8 @@ namespace cefeAPI.Migrations
                     b.Property<int>("IdPalestra")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("DataPalestra");
+                    b.Property<string>("DataPalestra")
+                        .IsRequired();
 
                     b.Property<string>("DiretorPalestra");
 
@@ -39,6 +40,22 @@ namespace cefeAPI.Migrations
                     b.HasKey("IdPalestra");
 
                     b.ToTable("palestra");
+                });
+
+            modelBuilder.Entity("cefeAPI.Models.UsuarioAdministrador", b =>
+                {
+                    b.Property<int>("IdusuarioAdm")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Login");
+
+                    b.Property<string>("Nome");
+
+                    b.Property<string>("Password");
+
+                    b.HasKey("IdusuarioAdm");
+
+                    b.ToTable("usuarioadministrador");
                 });
 #pragma warning restore 612, 618
         }

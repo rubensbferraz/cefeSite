@@ -3,7 +3,7 @@ import Flexbox from 'flexbox-react';
 //import Menu from './menu/menu';
 
 import './css/corpo.css';
-import Palestra from '../paginasInternas/palestrasPublicas/ListaPalestras';
+import Palestra from '../paginasInternas/palestrasPublicas/AdicionaPalestras';
 
 class Corpo extends Component {
     constructor(props){
@@ -16,7 +16,6 @@ class Corpo extends Component {
         return(
             <div className="corpo" >
                 <Flexbox>      
-                    
                 </Flexbox>
                 <Flexbox>
                     <Palestra/>

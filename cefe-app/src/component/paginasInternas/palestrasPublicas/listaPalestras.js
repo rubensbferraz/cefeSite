@@ -19,7 +19,6 @@ class ListaDePalestras extends React.Component {
             const listaPalestra = resposta.data;
             this.setState({ listaPalestra})
         })
-        
     }
 
     render(){
@@ -38,9 +37,9 @@ class ListaDePalestras extends React.Component {
                             <th scope="col">Tema</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody> 
                         {listaPalestra.map(lista =>
-                            <tr key={lista.idPalestra}> 
+                        <tr key={lista.idPalestra}> 
                             <td>{lista.dataPalestra}</td>
                             <td>{lista.diretorPalestra}</td>
                             <td>{lista.palestrante}</td>

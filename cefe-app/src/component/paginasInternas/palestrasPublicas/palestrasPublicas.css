@@ -6,9 +6,18 @@
 }
 .contenerFrmAddPalestra{
     display: flex;
+    flex-direction: column;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+}
+.camposInput{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .cabecaTab{
     display: flex;
@@ -16,6 +25,11 @@
     width: 800px;
     height: 100px;
     padding: 4px 0px;
+}
+.botoes{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: flex-end;
 }
 
 .containerTabela{

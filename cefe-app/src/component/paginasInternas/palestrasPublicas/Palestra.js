@@ -1,16 +1,31 @@
 import React, {Component} from 'react';
 // @ts-ignore
+import DataHelper from '../../uteis/DataHelper';
+// @ts-ignore
 import img from './imagem/logoTab.png';
+import axios from 'axios';
 import './palestrasPublicas.css';
+import { Servidor } from '../../assest/constant';
 
+let url = Servidor.palestras;
 class Palestra extends Component {
     constructor(props){
         super(props);
         this.state={
-
+            listaPalestra: [],
         }
     }
+    componentDidMount() {
+        axios.get(url)
+            .then(resposta => {
+                const listaPalestra = resposta.data;
+                this.setState({ listaPalestra })
+            })
+    }
     render(){
+        let listaPalestra = this.state.listaPalestra;
+        let teste = listaPalestra.map(campo => campo.dataPalestra);
+        console.log(teste.join())
         return(
             <div className="containerTabela">
                 <div className="cabecaTab">
@@ -29,13 +44,15 @@ class Palestra extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>08/08/2018</td>
-                            <td>luisio</td>
-                            <td>Maria</td>
-                            <td>Minha Casas Faz Palestras Boas</td>
-                            <td>Quarta</td>
-                        </tr>
+                        {listaPalestra.map(lista => 
+                            <tr key={lista.idPalestra}>
+                            <td>{lista.dataPalestra}</td>
+                            <td>{lista.diretorPalestra}</td>
+                            <td>{lista.palestrante}</td>
+                            <td>{lista.temaPalestra}</td>
+                            <td>{lista.semana}</td>
+                            </tr>
+                        )}
                     </tbody>
                     <tfoot>
                     </tfoot>
@@ -44,5 +61,4 @@ class Palestra extends Component {
         )
     }
 }
-
 export default Palestra
