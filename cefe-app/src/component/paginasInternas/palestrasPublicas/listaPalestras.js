@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { Servidor } from '../../assest/constant';
 import './palestrasPublicas.css';
+import DataHelper from '../../uteis/DataHelper';
 let url = Servidor.palestras;
 
 class ListaDePalestras extends React.Component {
@@ -21,9 +22,11 @@ class ListaDePalestras extends React.Component {
         })
     }
 
+
+
     render(){
         let listaPalestra = this.state.listaPalestra;
-        const teste = listaPalestra.map(d => d.dataPalestra).join();
+        const teste = listaPalestra.map(d => d.dataPalestra);
         console.log(teste);
         return(
             <div className="contener_tabelaPalestra">
@@ -40,7 +43,7 @@ class ListaDePalestras extends React.Component {
                     <tbody> 
                         {listaPalestra.map(lista =>
                         <tr key={lista.idPalestra}> 
-                            <td>{lista.dataPalestra}</td>
+                            <td>{(lista.dataPalestra).split('-').reverse().join('/')}</td>
                             <td>{lista.diretorPalestra}</td>
                             <td>{lista.palestrante}</td>
                             <td>{lista.semana}</td>

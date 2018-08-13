@@ -46,7 +46,7 @@ class Palestra extends Component {
                     <tbody>
                         {listaPalestra.map(lista => 
                             <tr key={lista.idPalestra}>
-                            <td>{lista.dataPalestra}</td>
+                            <td>{(lista.dataPalestra).split('-').reverse().join('/')}</td>
                             <td>{lista.diretorPalestra}</td>
                             <td>{lista.palestrante}</td>
                             <td>{lista.temaPalestra}</td>
