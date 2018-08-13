@@ -1,0 +1,26 @@
+.containerHowNoticias{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 1000px;
+    height: 200px;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+}
+
+.primeiraNoticia,
+.segundaNoticia,
+.terceiraNoticia{
+    flex:1;
+    flex-direction: row;;
+    width: 33.33%;
+    margin: 5px 5px 5px 5px;
+    background-color: blanchedalmond;
+    border: solid 1px #000000;
+}
+.segundaNoticia{
+    margin-left: 0px;
+    margin-right: 0px; 
+}
