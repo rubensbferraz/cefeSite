@@ -67,7 +67,7 @@ export class Menu extends Component {
                         {/*Item Menu Casa Espirita*/}
                             {casaEspirita.map(link => 
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Casa Espírita
                                 </a>
                                 <div className="dropdown-menu" key={link.Diretoria} aria-labelledby="navbarDropdown">
@@ -75,7 +75,7 @@ export class Menu extends Component {
                                     <Link className="dropdown-item" to={'/quemEQuem'}>Quem é quem</Link>
                                     <div className="dropdown-divider"></div>
                                     <div>
-                                        <a className="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a className="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Administracão
                                         </a>
                                         <Link className="dropdown-item" to={'/gestaoAnterior'}>Gestão Anteror</Link>
@@ -87,7 +87,7 @@ export class Menu extends Component {
                             {/*Item Menu de Estudos*/}
                             {estudos.map(link =>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Estudos
                             </a>
                                 <div className="dropdown-menu" key={link.Estudos} aria-labelledby="navbarDropdown">
@@ -95,7 +95,7 @@ export class Menu extends Component {
                                     <Link className="dropdown-item" to={'/oficinas'}>Oficinas</Link>
                                     <div className="dropdown-divider"></div>
                                     <div>
-                                        <a className="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a className="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Evangelização
                                     </a>
                                         <Link className="dropdown-item" to={'/infancia'}>Infancia</Link>
@@ -108,7 +108,7 @@ export class Menu extends Component {
                             {/*Item Menu das Praticas*/}
                             {pratica.map(link =>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Práticas
                                 </a>
                             <div className="dropdown-menu" key={link.Praticas} aria-labelledby="navbarDropdown">
@@ -119,14 +119,14 @@ export class Menu extends Component {
                                 <Link className="dropdown-item" to={'/maoLimpas'}>Mãos Limpas</Link>
                                 <div className="dropdown-divider"></div>
                                 <div>
-                                    <a className="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Atendimento
                                     </a>
                                     <Link className="dropdown-item" to={'/assistidos'}>Infancia</Link>
                                     <Link className="dropdown-item" to={'/gestantes'}>Gestantes</Link>
                                 </div>
                                 <div>
-                                    <a className="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Campanhas
                                     </a>
                                     <Link className="dropdown-item" to={'/cecx'}>CE Chico Xavier</Link>
@@ -139,14 +139,14 @@ export class Menu extends Component {
                             {/*Item Menu Artes*/}
                             {arte.map(link =>
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Arte Espírita
                                     </a>
                                     <div className="dropdown-menu" key={link.Praticas} aria-labelledby="navbarDropdown">
                                         <Link className="dropdown-item" to={'/temgirantes'}>Teatro Mesas Girantes</Link>
                                         <div className="dropdown-divider"></div>
                                         <div>
-                                            <a className="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a className="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Corais
                                         </a>
                                             <Link className="dropdown-item" to={'/cefe'}>Coral CEFE</Link>
@@ -158,14 +158,14 @@ export class Menu extends Component {
                             {/*Item Menu Contatos*/}
                             {contato.map(link =>
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Contatos
                                     </a>
                                     <div className="dropdown-menu" key={link.Praticas} aria-labelledby="navbarDropdown">
                                         <Link className="dropdown-item" to={'/contato'}>Maiores Informações</Link>
                                         <div className="dropdown-divider"></div>
                                         <div>
-                                            <a className="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <a className="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Redes Sociais
                                         </a>
                                             <Link className="dropdown-item" to={'/faceBook'}>FaceBook</Link>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-//import Routes from './Routes';
 import Cabecalho from './../components/Cabecalho/cabecalho.js';
 import Corpo from './../components/Corpo/corpo.js';
 import Rodape from './../components/Rodape/rodape.js';

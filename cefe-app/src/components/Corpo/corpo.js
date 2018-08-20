@@ -18,8 +18,8 @@ class Corpo extends Component {
         return(
             <div className="corpo" >
                 <Menu/> 
-                <HowNoticias/>
-                <Routes/>     
+                <HowNoticias />     
+                <Routes/>
             </div>
         );
     }

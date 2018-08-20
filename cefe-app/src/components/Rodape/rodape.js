@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import './css/rodape.css'
 
 class Rodape extends Component {
     render(){
         return(
             <div className="rodape">
-                <h4>Esse sera meu Rodapé</h4>
+                {<p>Vila Buritis IV</p>}
+                <p>Quadra 26 Conjunto "A" lotes 08 e 10</p>
+    
             </div>
         )
     }
