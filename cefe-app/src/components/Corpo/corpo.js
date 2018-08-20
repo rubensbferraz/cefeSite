@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import Menu from './../../main/Menu';
 import './css/corpo.css';
 
-//import HowNoticias from './tresNoticasRapidas';
+import Routes from './../../main/Routes';
+
+import HowNoticias from './tresNoticasRapidas';
 
 class Corpo extends Component {
     constructor(props){
@@ -15,7 +17,9 @@ class Corpo extends Component {
     render(){
         return(
             <div className="corpo" >
-                <Menu/>      
+                <Menu/> 
+                <HowNoticias/>
+                <Routes/>     
             </div>
         );
     }
