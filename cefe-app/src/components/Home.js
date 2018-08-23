@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import HowNoticias from './../components/Corpo/HowNoticias/tresNoticasRapidas';
+import CarroselNoticias from './Corpo/Carrosel/CarroselNoticias';
 
 export class Home extends Component {
     render () {
         return (
             <div>
-                <h1>Minha página principal</h1>
+                <HowNoticias/>
+                <CarroselNoticias/>
             </div>
         )
     }

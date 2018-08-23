@@ -66,12 +66,12 @@ export class Menu extends Component {
                         <ul className="navbar-nav mr-auto">
                         {/*Item Menu Casa Espirita*/}
                             {casaEspirita.map(link => 
-                            <li className="nav-item dropdown">
+                            <li className="nav-item dropdown" key={link.route}>
                                 <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Casa Espírita
                                 </a>
                                 <div className="dropdown-menu" key={link.Diretoria} aria-labelledby="navbarDropdown">
-                                    <Link className="dropdown-item" to={'/quemSomos'}>Quem Somos</Link>
+                                    <Link className="dropdown-item" to="/quemSomos" target="">Quem Somos</Link>
                                     <Link className="dropdown-item" to={'/quemEQuem'}>Quem é quem</Link>
                                     <div className="dropdown-divider"></div>
                                     <div>

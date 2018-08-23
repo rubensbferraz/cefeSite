@@ -9,36 +9,36 @@ import QuemEQuem from './../components/menu/casaEspirita/diretoria/QuemEQuem';
     import GestaoAnterior from './../components/menu/casaEspirita/administracao/GestaoAnterior';
     import GestaoAtual from './../components/menu/casaEspirita/administracao/GestaoAtual';
 //Estudos
-import Cursos from './../components/menu/estudos/Cursos.js';
-import Oficinas from './../components/menu/estudos/Oficinas.js';
+import Cursos from './../components/menu/estudos/Cursos';
+import Oficinas from './../components/menu/estudos/Oficinas';
     //Evangelização
-    import Adultos from './../components/menu/estudos/evangelizacao/Adultos.js';
-    import Infancias from './../components/menu/estudos/evangelizacao/Infancia.js';
-    import Jovens from './../components/menu/estudos/evangelizacao/Jovens.js';
+    import Adultos from './../components/menu/estudos/evangelizacao/Adultos';
+    import Infancias from './../components/menu/estudos/evangelizacao/Infancia';
+    import Jovens from './../components/menu/estudos/evangelizacao/Jovens';
 //Práticas 
-import AplicadoresPasses from './../components/menu/praticas/AplicadoresPasses.js';
-import Bazar from './../components/menu/praticas/Bazar.js';
-import Eventos from './../components/menu/praticas/Eventos.js';
-import GrupoMediunico from './../components/menu/praticas/GrupoMediunico.js';
-import MaoLimpas from './../components/menu/praticas/MaoLimpas.js';
+import AplicadoresPasses from './../components/menu/praticas/AplicadoresPasses';
+import Bazar from './../components/menu/praticas/Bazar';
+import Eventos from './../components/menu/praticas/Eventos';
+import GrupoMediunico from './../components/menu/praticas/GrupoMediunico';
+import MaoLimpas from './../components/menu/praticas/MaoLimpas';
     //Atendimento
-    import Assistidos from './../components/menu/praticas/atendimento/Assistidos.js'
-    import Gestantes from './../components/menu/praticas/atendimento/Gestantes.js'
+    import Assistidos from './../components/menu/praticas/atendimento/Assistidos';
+    import Gestantes from './../components/menu/praticas/atendimento/Gestantes';
     //Campanhas
-    import Cecx from './../components/menu/praticas/campanhas/Cecx.js';
-    import Cfas from './../components/menu/praticas/campanhas/Cfas.js';
-    import Jlar from './../components/menu/praticas/campanhas/Jlar.js';
+    import Cecx from './../components/menu/praticas/campanhas/Cecx';
+    import Cfas from './../components/menu/praticas/campanhas/Cfas';
+    import Jlar from './../components/menu/praticas/campanhas/Jlar';
 //Arte
-import Temgirantes from './../components/menu/artes/Temgirantes.js'
+import Temgirantes from './../components/menu/artes/Temgirantes';
     //Corais
-    import Cefe from './../components/menu/artes/Corais/Cefe.js';
-    import Ciameimai from './../components/menu/artes/Corais/Ciameimei.js';
+    import Cefe from './../components/menu/artes/Corais/Cefe';
+    import Ciameimai from './../components/menu/artes/Corais/Ciameimei';
 //Contatos
-import Contato from './../components/menu/contatos/MaioresInformacoes.js';
+import Contato from './../components/menu/contatos/MaioresInformacoes';
     //Redes Sociais
-    import FaceBook  from './../components/menu/contatos/RedeSociais/FaceBook.js';
-    import Instagram from './../components/menu/contatos/RedeSociais/Instagram.js';
-    import Twitter from './../components/menu/contatos/RedeSociais/Twitter.js';
+    import FaceBook  from './../components/menu/contatos/RedeSociais/FaceBook';
+    import Instagram from './../components/menu/contatos/RedeSociais/Instagram';
+    import Twitter from './../components/menu/contatos/RedeSociais/Twitter';
 
 import { NoMatch } from './../components/NoMatch';
 
@@ -68,7 +68,8 @@ export class Routes extends Component {
                     <Route path='/grupoMediunico' component={GrupoMediunico} />  
                     <Route path='/maoLimpas' component={MaoLimpas} /> 
                     {/*Atendimento*/} 
-                    <Route path='/assistidos' component={Assistidos} />                                     <Route path='/gestantes' component={Gestantes} />  
+                    <Route path='/assistidos' component={Assistidos} />                                     
+                    <Route path='/gestantes' component={Gestantes} />  
                     {/*Campanhas*/}
                     <Route path='/cecx' component={Cecx} />
                     <Route path='/cfas' component={Cfas} />

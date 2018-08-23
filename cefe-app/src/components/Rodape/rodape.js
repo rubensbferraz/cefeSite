@@ -5,8 +5,8 @@ class Rodape extends Component {
     render(){
         return(
             <div className="rodape">
-                {<p>Vila Buritis IV</p>}
-                <p>Quadra 26 Conjunto "A" lotes 08 e 10</p>
+                <p>Vila Buritis IV <br/>
+                Quadra 26 Conjunto "A" lotes 08 e 10</p>
     
             </div>
         )
