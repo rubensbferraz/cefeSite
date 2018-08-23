@@ -10,7 +10,7 @@ export default class TresNoticiasRapidas extends React.Component {
             terceiraNotica: ''
         }
     }
-
+ 
     render(){
         return (
             <div className="containerHowNoticias">

@@ -2,21 +2,17 @@ import React, { Component } from 'react';
 import './css/cabecalho.css';
 import Flexbox from 'flexbox-react';
 import { Link } from 'react-router-dom';
-import Home from './../Home';
 
-const home = [
-    {
-        Home: [
-            { route: "/", label: "Home" },
-        ]
-    },
+const routes = [
+    { route: "/", label: "Home" },
 ];
 class Cabecalho extends Component{
     render(){
         return(
             <Flexbox className="cabecalho">
-            {home.map(link => 
-                <Link className="link" to={'/'} style={{ textDecoration: 'none' }}>
+            {routes.map((link, i) => 
+                // @ts-ignore
+                <Link key={i} to={'/'} style={{ textDecoration: 'none' }}>
                 <Flexbox className="app-cabecalho">
                     <Flexbox className="logo" >
                         <Flexbox className="logoCEFE">
@@ -31,7 +27,7 @@ class Cabecalho extends Component{
                     </Flexbox>
                     </Flexbox>
                     </Link>
-                )}
+            )}
             </Flexbox>        
 
         );

@@ -9,6 +9,7 @@ import './../css-pagina.css';
 class App extends Component {
   render() {
     return (
+      // @ts-ignore
       <Router>
         <Flexbox minHeight="100vh" className="appContener">
           <Flexbox element="header" height="200px">

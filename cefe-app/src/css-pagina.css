@@ -17,7 +17,7 @@ a{
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
+    background-color: transparent;
     z-index: 10;
 }
 .corpo{

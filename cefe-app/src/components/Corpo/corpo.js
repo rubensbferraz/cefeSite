@@ -3,8 +3,6 @@ import Menu from './../../main/Menu';
 import './css/corpo.css';
 import Routes from './../../main/Routes';
 
-import HowNoticias from './HowNoticias/tresNoticasRapidas';
-
 class Corpo extends Component {
     constructor(props){
         super(props);
@@ -15,7 +13,7 @@ class Corpo extends Component {
 
     render(){
         return(
-            <div className="corpo transparentView" >
+            <div className="corpo" >
                 <Menu />
                 <Routes/>
             </div>

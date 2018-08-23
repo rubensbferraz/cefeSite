@@ -65,13 +65,14 @@ export class Menu extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                         {/*Item Menu Casa Espirita*/}
-                            {casaEspirita.map(link => 
-                            <li className="nav-item dropdown" key={link.route}>
+                            {casaEspirita.map((link, ce) => 
+                            // @ts-ignore
+                            <li className="nav-item dropdown" key={ce}>
                                 <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Casa Espírita
                                 </a>
-                                <div className="dropdown-menu" key={link.Diretoria} aria-labelledby="navbarDropdown">
-                                    <Link className="dropdown-item" to="/quemSomos" target="">Quem Somos</Link>
+                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <Link className="dropdown-item" to={'/quemSomos'}>Quem Somos</Link>
                                     <Link className="dropdown-item" to={'/quemEQuem'}>Quem é quem</Link>
                                     <div className="dropdown-divider"></div>
                                     <div>
@@ -85,12 +86,12 @@ export class Menu extends Component {
                             </li>
                             )}
                             {/*Item Menu de Estudos*/}
-                            {estudos.map(link =>
-                            <li className="nav-item dropdown">
+                            {estudos.map((link, e) =>
+                            <li className="nav-item dropdown" key={e}>
                                 <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Estudos
                             </a>
-                                <div className="dropdown-menu" key={link.Estudos} aria-labelledby="navbarDropdown">
+                                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <Link className="dropdown-item" to={'/cursos'}>Cursos</Link>
                                     <Link className="dropdown-item" to={'/oficinas'}>Oficinas</Link>
                                     <div className="dropdown-divider"></div>
@@ -106,12 +107,12 @@ export class Menu extends Component {
                             </li>
                             )}
                             {/*Item Menu das Praticas*/}
-                            {pratica.map(link =>
-                            <li className="nav-item dropdown">
+                            {pratica.map((link, p) =>
+                            <li className="nav-item dropdown" key={p}>
                                 <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Práticas
                                 </a>
-                            <div className="dropdown-menu" key={link.Praticas} aria-labelledby="navbarDropdown">
+                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <Link className="dropdown-item" to={'/aplicadoresPasses'}>Aplicadores de Passes</Link>
                                 <Link className="dropdown-item" to={'/bazar'}>Bazar</Link>
                                 <Link className="dropdown-item" to={'/eventos'}>Eventos</Link>
@@ -130,6 +131,7 @@ export class Menu extends Component {
                                         Campanhas
                                     </a>
                                     <Link className="dropdown-item" to={'/cecx'}>CE Chico Xavier</Link>
+
                                     <Link className="dropdown-item" to={'/cfas'}>Auta de Souza</Link>
                                     <Link className="dropdown-item" to={'/jlar'}>Jesus no Lar</Link>
                                 </div>                
@@ -137,18 +139,19 @@ export class Menu extends Component {
                             </li>
                             )}
                             {/*Item Menu Artes*/}
-                            {arte.map(link =>
-                                <li className="nav-item dropdown">
+                            {arte.map((link, a) =>
+                                <li className="nav-item dropdown" key={a}>
                                     <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Arte Espírita
                                     </a>
-                                    <div className="dropdown-menu" key={link.Praticas} aria-labelledby="navbarDropdown">
+                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <Link className="dropdown-item" to={'/temgirantes'}>Teatro Mesas Girantes</Link>
                                         <div className="dropdown-divider"></div>
                                         <div>
                                             <a className="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Corais
                                         </a>
+
                                             <Link className="dropdown-item" to={'/cefe'}>Coral CEFE</Link>
                                             <Link className="dropdown-item" to={'/ciamimai'}>Coral Amigos de Meimei</Link>
                                         </div>
@@ -156,20 +159,23 @@ export class Menu extends Component {
                                 </li>
                             )}  
                             {/*Item Menu Contatos*/}
-                            {contato.map(link =>
-                                <li className="nav-item dropdown">
+                            {contato.map((link, c) =>
+                                <li className="nav-item dropdown" key={c}>
                                     <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Contatos
                                     </a>
-                                    <div className="dropdown-menu" key={link.Praticas} aria-labelledby="navbarDropdown">
+                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <Link className="dropdown-item" to={'/contato'}>Maiores Informações</Link>
                                         <div className="dropdown-divider"></div>
                                         <div>
                                             <a className="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                 Redes Sociais
                                         </a>
+
                                             <Link className="dropdown-item" to={'/faceBook'}>FaceBook</Link>
+
                                             <Link className="dropdown-item" to={'/instagram'}>Instagram</Link>
+
                                             <Link className="dropdown-item" to={'/twitter'}>Twitter</Link>
                                         </div>
                                     </div>
