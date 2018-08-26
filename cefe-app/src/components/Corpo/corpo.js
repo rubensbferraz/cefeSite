@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Menu from './../../main/Menu';
 import './css/corpo.css';
 import Routes from './../../main/Routes';
+import RoutesNoticias from './HowNoticias/RoutesNoticia';
+
 
 class Corpo extends Component {
     constructor(props){
@@ -13,9 +15,10 @@ class Corpo extends Component {
 
     render(){
         return(
-            <div className="corpo" >
+            <div className="corpo transparentView" >
                 <Menu />
                 <Routes/>
+                <RoutesNoticias/>
             </div>
         );
     }

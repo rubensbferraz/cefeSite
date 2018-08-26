@@ -39,6 +39,8 @@ import Contato from './../components/menu/contatos/MaioresInformacoes';
     import FaceBook  from './../components/menu/contatos/RedeSociais/FaceBook';
     import Instagram from './../components/menu/contatos/RedeSociais/Instagram';
     import Twitter from './../components/menu/contatos/RedeSociais/Twitter';
+//HowDeNoticias
+import PrimeiraNoticia from './../components/Corpo/HowNoticias/PrimeiraNoticia';
 
 import { NoMatch } from './../components/NoMatch';
 
@@ -85,7 +87,8 @@ export class Routes extends Component {
                     <Route path='/facebook' component={FaceBook} />
                     <Route path='/instagram' component={Instagram} />
                     <Route path='/twitter' component={Twitter} /> 
-
+                    {/*HowDeNoticias*/}
+                    <Route path='/palestra' component={PrimeiraNoticia}/>
                     <Route component={NoMatch}/>
                 </Switch>
             </main>

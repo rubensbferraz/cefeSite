@@ -28,3 +28,13 @@ C:\Users\carlos.ferraz\desenvolvimento\projetosRubens\cefeSite\cefeAPI\obj\Debug
 C:\Users\carlos.ferraz\desenvolvimento\projetosRubens\cefeSite\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.AssemblyInfo.cs
 C:\Users\carlos.ferraz\desenvolvimento\projetosRubens\cefeSite\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.dll
 C:\Users\carlos.ferraz\desenvolvimento\projetosRubens\cefeSite\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.pdb
+C:\desenvolvimento\cefe\cefeSite\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.deps.json
+C:\desenvolvimento\cefe\cefeSite\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.runtimeconfig.json
+C:\desenvolvimento\cefe\cefeSite\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.runtimeconfig.dev.json
+C:\desenvolvimento\cefe\cefeSite\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.dll
+C:\desenvolvimento\cefe\cefeSite\cefeAPI\bin\Debug\netcoreapp2.0\cefeAPI.pdb
+C:\desenvolvimento\cefe\cefeSite\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.csproj.CoreCompileInputs.cache
+C:\desenvolvimento\cefe\cefeSite\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.AssemblyInfoInputs.cache
+C:\desenvolvimento\cefe\cefeSite\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.AssemblyInfo.cs
+C:\desenvolvimento\cefe\cefeSite\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.dll
+C:\desenvolvimento\cefe\cefeSite\cefeAPI\obj\Debug\netcoreapp2.0\cefeAPI.pdb

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace cefeAPI.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class InicialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

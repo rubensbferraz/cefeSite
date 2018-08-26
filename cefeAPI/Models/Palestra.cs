@@ -11,7 +11,7 @@ namespace cefeAPI.Models
         public string Palestrante { get; set; }
         public string DiretorPalestra { get; set; }
         
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{dd/MM/yyyy}")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd}")]
         [Required(ErrorMessage = "Informe a data deste lançamento.")]
         public string DataPalestra { get; set; }
         public string Semana { get; set; }

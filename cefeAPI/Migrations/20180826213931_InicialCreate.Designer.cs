@@ -11,8 +11,8 @@ using System;
 namespace cefeAPI.Migrations
 {
     [DbContext(typeof(PalestraDbContexto))]
-    [Migration("20180813135406_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20180826213931_InicialCreate")]
+    partial class InicialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
