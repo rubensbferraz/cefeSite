@@ -2,55 +2,45 @@ import React, { Component } from 'react'
 import {Servidor} from './../../assest/constant'
 import axios from 'axios';
 import * as moment from 'moment';
-
+import './../css/PrimeiraNoticia.css'
 const url = Servidor.palestras;
 class ListaSemanaPalestra extends Component {
-    constructor(props){
+    constructor(props){ 
         super(props)
         this.state = {
-            semana: [],
-            semanaPalestra: [],
-            semanaAtual: '',
             listaPalestra:[]
         }
     }
-    semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
-    semanaPalestra = ["Domingo", "Sexta"];
-    dataAtual = moment().format("D-MM-Y");
-
-    componentDidMount() {
+    componentWillMount() {
         axios.get(url)
         .then(resposta => {
-            console.log(resposta.data);
+            this.setState({ listaPalestra: resposta.data});
         })
     }
     
-    semanaDePalestra(){
-        axios.get(url)
-        .then(resposta => {
-            const listaPalestra = resposta.data;
-            const dataCadastradas = listaPalestra.map(dt => dt.dataPalestra);
-
-                for(var i=0; i<=dataCadastradas.length; i++){
-                    const convData = moment(dataCadastradas[i]).format("DD-MM-Y").toString();
-                    const myDate = new Date(convData);
-                    const diaSemanaCorrente = this.semana[myDate.getMonth()];
-                       console.log(diaSemanaCorrente);
-                }
-                
-                
-            })
-            return <p>{this.state.convData}</p>;
-    }
+    listaPalestraSemana = () => 
+        this.state.listaPalestra.filter(a => 
+        moment(a.dataPalestra).week() === moment().week()
+    );
     
- 
-    render () {
-        return (
-            <div>
-                {this.semanaDePalestra()}
+    render = () => (
+            <div className="contenerPrimeiraNoticia">
+            <table>
+                <tbody>
+                {this.listaPalestraSemana().map((evento, i) =>
+                    <tr key={i}>
+                    <th className="titulo">:: {evento.semana}</th>
+                    <th className="pData">{moment(evento.dataPalestra).format("DD-MM-Y")}</th>
+                    <th className="pPalestrante"><p>Orador: </p> {evento.palestrante}</th>
+                    <th className="pTema"><p>Tema: </p>{evento.temaPalestra}</th>
+                    </tr>
+                )}
+                </tbody>
+            </table>
+
             </div>
         )
-    }
-}
+            
+ }
 
 export default ListaSemanaPalestra;

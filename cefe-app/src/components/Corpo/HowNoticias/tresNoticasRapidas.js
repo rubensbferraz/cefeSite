@@ -1,6 +1,7 @@
 import React from 'react';
 import './../css/howNoticias.css';
 import { Link } from 'react-router-dom';
+import ListaSemanaPalestra from './ListaSemanaPalestra';
 
 const primeiraNoticia = [
         { route: "/palestra", label: "Escala de Oradores" },
@@ -20,12 +21,13 @@ export default class TresNoticiasRapidas extends React.Component {
         return (
             <div className="containerHowNoticias">
                 <div className="primeiraNoticia">
-                    {primeiraNoticia.map((link, a) => 
-                        // @ts-ignore
-                        <Link to={'/palestra'} key={a}>
-                            <small className="link">Veja aqui a Escala de Oradores</small>
-                        </Link>
-                    )}
+                    <ListaSemanaPalestra/>
+                        {primeiraNoticia.map((link, a) => 
+                            // @ts-ignore
+                            <Link to={'/palestra'} key={a}>
+                                <small className="link">Veja aqui a Escala de Oradores</small>
+                            </Link>
+                        )}
                 </div>
                 <div className="segundaNoticia"><p><small>O III Intercâmbio de Trabalhadores da Arte no Movimento Espírita será realizado no dia 
                     1º de setembro, às 8h30, na sede da Federação Espírita do Rio Grande do Sul (FERGS) promotora do evento.  “A Arte a Serviço do Bem” será o tema abordado.
