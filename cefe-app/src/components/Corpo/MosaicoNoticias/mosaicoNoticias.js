@@ -14,10 +14,10 @@ export class MosaicoNoticias extends Component {
         return (
             <div>
                 <div className="containerMosaicoNoticias">
-                    <div className="mosaicoUm" col-xs={12}>Mosaico Um</div>
-                    <div className="mosaicoDois" col-xs={12}>Mosaico Dois</div>
-                    <div className="mosaicoTres" col-xs={12}>Mosaico Tres</div>
-                    <div className="mosaicoQuatro" col-xs={12}>Mosaico Quatro</div>
+                    <div className="mosaicoUm">Mosaico Um</div>
+                    <div className="mosaicoDois">Mosaico Dois</div>
+                    <div className="mosaicoTres">Mosaico Tres</div>
+                    <div className="mosaicoQuatro">Mosaico Quatro</div>
                 </div>
             </div>
         )
