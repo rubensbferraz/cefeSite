@@ -1,4 +1,4 @@
-.containerMosaicoNoticias {
+.containerMosaicoNoticiasUm {
     display: flex;
     flex-direction: row;
     margin-left: auto;
@@ -20,10 +20,24 @@
       width: 50%;
       height: 300px;
 }
+.containerMosaicoNoticiasDois {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 95%;
+    min-height: 100%;
+    background-color: #FFFF;
+    border: solid 1px #000000;
+    margin-bottom: 1.5%;
+    text-decoration: none;
+}
 .mosaicoTres,
 .mosaicoQuatro{
     display: flex;
-    flex-direction: row;
     width: 50%;
     height: 300px;
 }
@@ -31,22 +45,16 @@
 .mosaicoDois,
 .mosaicoTres,
 .mosaicoQuatro {
-    margin: 5px 5px 5px 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     background-color: #6fcce9;
     border: solid 1px #ffffff;
     text-decoration: none;
 }
-.mosaicoDois{
-
+.mosaicoUm, .mosaicoTres{
+    margin-left: 3px;
 }
-.mosaicoTres {
+.mosaicoDois, .mosaicoQuatro {
+    margin-left: 3px;
+    margin-right: 3px;
 }
-
-/* .link {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    margin-left: 40%;
-    font-size: 11px;
-    color: #4b4b4b;
-} */

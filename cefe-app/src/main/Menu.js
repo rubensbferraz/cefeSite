@@ -130,10 +130,10 @@ export class Menu extends Component {
                                     <a className="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Campanhas
                                     </a>
-                                    <Link className="dropdown-item" to={'/cecx'}>CE Chico Xavier</Link>
+                                    <Link className="dropdown-item" to={'/cecx'}>Campanha de Esclarecimento Chico Xavier</Link>
 
-                                    <Link className="dropdown-item" to={'/cfas'}>Auta de Souza</Link>
-                                    <Link className="dropdown-item" to={'/jlar'}>Jesus no Lar</Link>
+                                    <Link className="dropdown-item" to={'/cfas'}>Campanha de Fratenidade Auta de Souza</Link>
+                                    <Link className="dropdown-item" to={'/jlar'}>Evangelho Jesus no Lar</Link>
                                 </div>                
                             </div>
                             </li>
@@ -152,7 +152,7 @@ export class Menu extends Component {
                                                 Corais
                                         </a>
 
-                                            <Link className="dropdown-item" to={'/cefe'}>Coral CEFE</Link>
+                                            <Link className="dropdown-item" to={'/cefe'}>Coral Espírita Fraternidade Emannuel</Link>
                                             <Link className="dropdown-item" to={'/ciamimai'}>Coral Amigos de Meimei</Link>
                                         </div>
                                     </div>
