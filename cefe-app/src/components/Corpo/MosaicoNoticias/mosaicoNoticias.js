@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './../css/mosaicoNoticias.css';
+import MosaicoUm from './mosaicoUm';
 export class MosaicoNoticias extends Component {
     constructor(props) {
         super(props)
@@ -13,9 +14,11 @@ export class MosaicoNoticias extends Component {
     render () {
         return (
             <div>
-                <div className="containerMosaicoNoticias">
-                    <div className="mosaicoUm">Mosaico Um</div>
+                <div className="containerMosaicoNoticiasUm">
+                    <div className="mosaicoUm"><MosaicoUm/></div>
                     <div className="mosaicoDois">Mosaico Dois</div>
+                </div>
+                <div className="containerMosaicoNoticiasDois">
                     <div className="mosaicoTres">Mosaico Tres</div>
                     <div className="mosaicoQuatro">Mosaico Quatro</div>
                 </div>
