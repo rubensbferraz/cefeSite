@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './../components/menu/css/styleMenu.css' 
 
 const casaEspirita = [
@@ -66,7 +66,6 @@ export class Menu extends Component {
                         <ul className="navbar-nav mr-auto">
                         {/*Item Menu Casa Espirita*/}
                             {casaEspirita.map((link, ce) => 
-                            // @ts-ignore
                             <li className="nav-item dropdown" key={ce}>
                                 <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Casa Espírita

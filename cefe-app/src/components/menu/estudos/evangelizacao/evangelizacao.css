@@ -1,0 +1,19 @@
+#evangeliza{
+    display: flex;
+    width: 80%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+.desc{
+    display: flex;
+    font-size: 0.7rem;
+    align-items: center;
+    text-align: center;
+}
