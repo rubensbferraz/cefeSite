@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import HowNoticias from './../components/Corpo/HowNoticias/tresNoticasRapidas';
 import CarroselNoticias from './Corpo/Carrosel/CarroselNoticias';
 import { MosaicoNoticias } from './Corpo/MosaicoNoticias/mosaicoNoticias';
+//import AddPalestra from './../components/PaginasInternas/PalestrasPublicas/AdicionaPalestras';
 
 export class Home extends Component {
     render () {

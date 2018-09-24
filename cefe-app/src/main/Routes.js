@@ -41,7 +41,9 @@ import Contato from './../components/menu/contatos/MaioresInformacoes';
     import Twitter from './../components/menu/contatos/RedeSociais/Twitter';
 //HowDeNoticias
 import PrimeiraNoticia from './../components/Corpo/HowNoticias/PrimeiraNoticia';
-
+//links internos
+//Adicionar Palestra
+import AddPalestra from './../components/PaginasInternas/PalestrasPublicas/AdicionaPalestras';
 import { NoMatch } from './../components/NoMatch';
 
 export class Routes extends Component {
@@ -89,6 +91,8 @@ export class Routes extends Component {
                     <Route path='/twitter' component={Twitter} /> 
                     {/*HowDeNoticias*/}
                     <Route path='/palestra' component={PrimeiraNoticia}/>
+                    {/*Links internos*/}
+                    <Route path='/AddPalestra' component={AddPalestra}/>
                     <Route component={NoMatch}/>
                 </Switch>
             </main>

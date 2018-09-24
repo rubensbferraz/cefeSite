@@ -52,6 +52,7 @@ class Palestra extends Component {
                         )}
                     </tbody>
                     <tfoot>
+                        <a href="./../AddPalestra" >Cadastrar Palestra</a>
                     </tfoot>
                 </table>        
             </div>
