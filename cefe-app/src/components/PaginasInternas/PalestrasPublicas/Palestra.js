@@ -1,28 +1,35 @@
 import React, {Component} from 'react';
-// @ts-ignore
 import img from './imagem/logoTab.png';
 import axios from 'axios';
+import * as moment from 'moment';
 import './palestrasPublicas.css';
 import { Servidor } from '../../assest/constant';
 
 let url = Servidor.palestras;
+let addPalestra = './../addPalestra';
 class Palestra extends Component {
     constructor(props){
         super(props);
         this.state={
             listaPalestra: [],
         }
+        this.listaPalestraMes = this.listaPalestraMes.bind(this); 
         
     }
-    componentDidMount() {
-        axios.get(url)
+
+        componentWillMount() {
+            axios.get(url)
             .then(resposta => {
-                const listaPalestra = resposta.data;
-                this.setState({ listaPalestra })
-            })
+                this.setState({ listaPalestra: resposta.data });
+        })
+        
     }
+    listaPalestraMes = () =>
+        this.state.listaPalestra.filter(a =>
+            moment(a.dataPalestra).month() === moment().month()
+    );
+
     render(){
-        let listaPalestra = this.state.listaPalestra;
         return(
             <div className="containerTabela">
                 <div className="cabecaTab">
@@ -30,7 +37,7 @@ class Palestra extends Component {
                     <p className="nomeCasa"><span>CEFE</span>Casa Espírita Fraternidade Emmanuel</p>
                     <p className="txtPl">Escala de Palestras</p>
                 </div>
-                <table id="tbPalestra" className="table table-active table-sm">
+                <table id="tbPalestra" className="table table-active table-sm table-striped table-bordered table-hover">
                     <thead>
                         <tr className="titulosColunas">
                             <th scope="col">Data</th>
@@ -41,19 +48,19 @@ class Palestra extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        {listaPalestra.map(lista => 
-                            <tr key={lista.idPalestra}>
-                            <td>{(lista.dataPalestra).split('-').reverse().join('/')}</td>
-                            <td>{lista.diretorPalestra}</td>
-                            <td>{lista.palestrante}</td>
-                            <td>{lista.temaPalestra}</td>
-                            <td>{lista.semana}</td>
-                            </tr>
+                        {this.listaPalestraMes().map((lista, index) =>
+                            <tr key={index}>
+                                <td>{(lista.dataPalestra).split('-').reverse().join('/')}</td>
+                                <td>{lista.diretorPalestra}</td>
+                                <td>{lista.palestrante}</td>
+                                <td>{lista.temaPalestra}</td>
+                                <td>{lista.semana}</td>
+                            </tr>                            
                         )}
                     </tbody>
-                    <tfoot>
-                        <a href="./../AddPalestra" >Cadastrar Palestra</a>
-                    </tfoot>
+                    <div>
+                        <a href={addPalestra} >Cadastrar Palestra</a>
+                    </div>
                 </table>        
             </div>
         )

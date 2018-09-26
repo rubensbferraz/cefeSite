@@ -4,7 +4,6 @@ import './css/corpo.css';
 import Routes from './../../main/Routes';
 import RoutesNoticias from './HowNoticias/RoutesNoticia';
 
-
 class Corpo extends Component {
     constructor(props){
         super(props);
