@@ -20,6 +20,28 @@ namespace cefeAPI.Migrations
                 .HasAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
                 .HasAnnotation("ProductVersion", "2.0.2-rtm-10011");
 
+            modelBuilder.Entity("cefeAPI.Models.HollNoticias", b =>
+                {
+                    b.Property<int>("IdhollNoticias")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("DataFinalPrimeira");
+
+                    b.Property<string>("DataFinalSegunda");
+
+                    b.Property<string>("DataInicioPrimeira");
+
+                    b.Property<string>("DataInicioSegunda");
+
+                    b.Property<string>("NoticiaPrimeira");
+
+                    b.Property<string>("NoticiaSegunda");
+
+                    b.HasKey("IdhollNoticias");
+
+                    b.ToTable("hollNoticias");
+                });
+
             modelBuilder.Entity("cefeAPI.Models.Palestra", b =>
                 {
                     b.Property<int>("IdPalestra")

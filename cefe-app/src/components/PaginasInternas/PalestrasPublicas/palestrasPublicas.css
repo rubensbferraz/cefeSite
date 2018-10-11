@@ -67,3 +67,11 @@
 .titulosColunas{
     color: #2F4F4F;
 }
+.voltar i{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 96%;
+    margin-top: 0.5%;
+    text-decoration: none;
+}

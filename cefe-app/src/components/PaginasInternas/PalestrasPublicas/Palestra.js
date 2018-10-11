@@ -6,7 +6,7 @@ import './palestrasPublicas.css';
 import { Servidor } from '../../assest/constant';
 
 let url = Servidor.palestras;
-let addPalestra = './../addPalestra';
+let addPalestra = './';
 class Palestra extends Component {
     constructor(props){
         super(props);
@@ -37,7 +37,7 @@ class Palestra extends Component {
                     <p className="nomeCasa"><span>CEFE</span>Casa Espírita Fraternidade Emmanuel</p>
                     <p className="txtPl">Escala de Palestras</p>
                 </div>
-                <table id="tbPalestra" className="table table-active table-sm table-striped table-bordered table-hover">
+                <table id="tbPalestra" className="table table-sm table-striped table-bordered table-hover">
                     <thead>
                         <tr className="titulosColunas">
                             <th scope="col">Data</th>
@@ -58,10 +58,10 @@ class Palestra extends Component {
                             </tr>                            
                         )}
                     </tbody>
-                    <div>
-                        <a href={addPalestra} >Cadastrar Palestra</a>
-                    </div>
                 </table>        
+                    <a href={addPalestra} className="voltar">
+                        <i className="medium material-icons" alt="Voltar">arrow_forward</i>
+                    </a>
             </div>
         )
     }
