@@ -24,7 +24,7 @@ export default class TresNoticiasRapidas extends React.Component {
                     <ListaSemanaPalestra/>
                         {primeiraNoticia.map((link, a) => 
                             // @ts-ignore
-                            <Link to={'/palestra'} key={a}>
+                            <Link to={'/palestra'} target="_parent" key={a}>
                                 <div className="link">Veja aqui a Escala de Oradores</div>
                             </Link>
                         )}

@@ -15,7 +15,7 @@ class Corpo extends Component {
     render(){
         return(
             <div className="corpo transparentView" >
-                <Menu />
+                <Menu/>
                 <Routes/>
                 <RoutesNoticias/>
             </div>

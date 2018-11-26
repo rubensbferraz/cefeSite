@@ -7,6 +7,7 @@ const casaEspirita = [
         { route: "/", label: "Home" },
         { route: "/quemSomos", label: "Quem Somos" },
         { route: "/quemEQuem", label: "Quem E Quem" }, 
+        { route: "/gerenciando", label: "Gerenciando"},
         { route: "/gestaoAnterior", label: "Gestão Anterior" },
         { route: "/gestaoAtual", label: "Gestão Atual" },
     ]},
@@ -78,6 +79,7 @@ export class Menu extends Component {
                                         <a className="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Administracão
                                         </a>
+                                        <Link className="dropdown-item" to={'/gerenciando'}>Gerenciando</Link>                                        
                                         <Link className="dropdown-item" to={'/gestaoAnterior'}>Gestão Anteror</Link>
                                         <Link className="dropdown-item" to={'/gestaoAtual'}>Gestão Atual</Link>
                                     </div>

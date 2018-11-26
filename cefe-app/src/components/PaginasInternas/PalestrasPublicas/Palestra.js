@@ -1,12 +1,17 @@
 import React, {Component} from 'react';
-import img from './imagem/logoTab.png';
 import axios from 'axios';
+// @ts-ignore
+import logo from './imagem/logoTab.png';
 import * as moment from 'moment';
+import { Link } from 'react-router-dom';
 import './palestrasPublicas.css';
 import { Servidor } from '../../assest/constant';
 
 let url = Servidor.palestras;
-let addPalestra = './';
+
+const registroPalestras = [
+        { route: "/AddPalestra", label: "Registro de Palestras" },
+];
 class Palestra extends Component {
     constructor(props){
         super(props);
@@ -33,7 +38,7 @@ class Palestra extends Component {
         return(
             <div className="containerTabela">
                 <div className="cabecaTab">
-                    <p className="logoTab"><img alt="" src={img}></img></p>
+                    <p className="logoTab"><img alt="" src={logo}/></p>
                     <p className="nomeCasa"><span>CEFE</span>Casa Espírita Fraternidade Emmanuel</p>
                     <p className="txtPl">Escala de Palestras</p>
                 </div>
@@ -58,16 +63,16 @@ class Palestra extends Component {
                             </tr>                            
                         )}
                         <tr className="linkCadastrar">
-                            // @ts-ignore
-                            <td colspan="5">
-                                <a href={addPalestra} >Cadastrar Palestra</a>
+                            <td colSpan={5}>
+                                {registroPalestras.map((link, a) => 
+                                    <Link to={'/AddPalestra'} key={a}>
+                                        <div><small>Cadastrar Palestras</small></div>
+                                    </Link>
+                                )}
                             </td>
                         </tr>
                     </tbody>
                 </table>        
-                    <a href={addPalestra} className="voltar">
-                        <i className="medium material-icons" alt="Voltar">arrow_forward</i>
-                    </a>
             </div>
         )
     }

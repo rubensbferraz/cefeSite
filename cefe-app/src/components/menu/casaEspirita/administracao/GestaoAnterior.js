@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-
+import '../../../Corpo/css/corpo.css';
 export class GestaoAnterior extends Component {
     render () {
         return (
             <div>
-                <h1>GestaoAnterior</h1>
+                <h1 className="topoMateria">GestaoAnterior</h1>
             </div>
         )
     }

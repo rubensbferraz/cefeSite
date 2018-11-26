@@ -19,5 +19,11 @@
     justify-content: center;
     position: 'absolute';
 }
+.corpo{
+    margin-top: 4px;
+}
+.topoMateria {
+    margin-top: 15px;
+}
 
 

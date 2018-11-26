@@ -13,20 +13,20 @@ class Cabecalho extends Component{
             {routes.map((link, i) => 
                 // @ts-ignore
                 <Link key={i} to={'/'} style={{ textDecoration: 'none' }}>
-                <Flexbox className="app-cabecalho">
-                    <Flexbox className="logo" >
-                        <Flexbox className="logoCEFE">
-                                <img src="../../../../images/CEFELogo.png" alt='' />
+                    <Flexbox className="app-cabecalho">
+                        <Flexbox className="logo" >
+                            <Flexbox className="logoCEFE">
+                                    <img src="../../../../images/CEFELogo.png" alt='' />
+                            </Flexbox>
+                            <Flexbox className="textologoCEFE">
+                                <span>CEFE<p>Casa Espírita Fratenidade Emanuel</p></span>
+                            </Flexbox>
                         </Flexbox>
-                        <Flexbox className="textologoCEFE">
-                            <span>CEFE<p>Casa Espírita Fratenidade Emanuel</p></span>
+                        <Flexbox className="fundoGiraSol">
+                            <img alt='' src="../../../../images/fundoCabecalhoGiraSois.png" />
                         </Flexbox>
                     </Flexbox>
-                    <Flexbox className="fundoGiraSol">
-                        <img alt='' src="../../../../images/fundoCabecalhoGiraSois.png" />
-                    </Flexbox>
-                    </Flexbox>
-                    </Link>
+                </Link>
             )}
             </Flexbox>        
 

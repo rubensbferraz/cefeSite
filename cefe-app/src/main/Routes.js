@@ -6,6 +6,7 @@ import Home from './../components/Home';
 import QuemSomos from './../components/menu/casaEspirita/diretoria/QuemSomos';
 import QuemEQuem from './../components/menu/casaEspirita/diretoria/QuemEQuem';
     //Administração
+    import Gerenciando from './../components/menu/casaEspirita/administracao/Gerenciando';
     import GestaoAnterior from './../components/menu/casaEspirita/administracao/GestaoAnterior';
     import GestaoAtual from './../components/menu/casaEspirita/administracao/GestaoAtual';
 //Estudos
@@ -56,6 +57,7 @@ export class Routes extends Component {
                     <Route path='/quemSomos' component={QuemSomos} />
                     <Route path='/quemEQuem' component={QuemEQuem} />
                     {/*Administração*/}
+                    <Route path='/gerenciando' component={Gerenciando}/>
                     <Route path='/gestaoAnterior' component={GestaoAnterior}/>
                     <Route path='/gestaoAtual' component={GestaoAtual} />
                     {/*Estudos*/}
