@@ -67,10 +67,19 @@
 .titulosColunas{
     color: #2F4F4F;
 }
+<<<<<<< HEAD
 .linkCadastrar a{
     flex: 1;
     float: right;
     margin-right: 2%;
     color: black;
+=======
+.voltar i{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 96%;
+    margin-top: 0.5%;
+>>>>>>> d935d7b64c23b42a4439e1dae9ecaf693f6ffab0
     text-decoration: none;
 }

@@ -5,10 +5,28 @@ using System.Collections.Generic;
 
 namespace cefeAPI.Migrations
 {
-    public partial class InicialCreate : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "hollNoticias",
+                columns: table => new
+                {
+                    IdhollNoticias = table.Column<int>(nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    DataFinalPrimeira = table.Column<string>(nullable: true),
+                    DataFinalSegunda = table.Column<string>(nullable: true),
+                    DataInicioPrimeira = table.Column<string>(nullable: true),
+                    DataInicioSegunda = table.Column<string>(nullable: true),
+                    NoticiaPrimeira = table.Column<string>(nullable: true),
+                    NoticiaSegunda = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_hollNoticias", x => x.IdhollNoticias);
+                });
+
             migrationBuilder.CreateTable(
                 name: "palestra",
                 columns: table => new
@@ -44,6 +62,9 @@ namespace cefeAPI.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "hollNoticias");
+
             migrationBuilder.DropTable(
                 name: "palestra");
 
