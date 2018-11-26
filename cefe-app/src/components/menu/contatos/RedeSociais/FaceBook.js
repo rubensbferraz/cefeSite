@@ -1,13 +1,21 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
 export class FaceBook extends Component {
 
+    faceCEFE (d, s, id){
+        let js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+    }
     render () {
         return (
             <div>
-                <h6>Encontre-nos no FaceBook</h6>
-                <p><a href="https://www.facebook.com/cefeemmanuel/">Página Oficial da CEFE no FeceBook</a></p>
-                <p><small>Maiores detalhes entre em contato com Rafael Camargo (61) 9999-9999</small></p>
+            <div id="fb-root"></div>
+            $.getScript(function (d, s, id) {
+                this.faceCEFE()
+            }(document, 'script', 'facebook-jssdk'));
             </div>
         )
     }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+// @ts-ignore
 import Coordenadoras from './imagens/coodenadoras.png';
-import Voltar from './imagens/voltar.png';
 import './../../css/styleMenu.css';
 import './evangelizacao.css'
 
@@ -16,7 +16,7 @@ export class Infancia extends Component {
                             <div className="desc">Essas são as coordenadoras, venham conhecê-las.</div>
                     </div>
                         
-                        <table table>
+                        <table className="table">
                             <tr>
                                 <th scope="col"><p className="n"> A Evangelização Espírita Infanto-juvenil  Meimei de nossa Casa Espírita acontece todos os domingos das 9h às 11h. Aliada  a ela oferecemos, no mesmo horário, a Evangelização de Adultos para os pais e  familiares/amigos dos evangelizandos.<br />
                                     <br />
@@ -40,12 +40,6 @@ export class Infancia extends Component {
                                     <span className="c">Você que ainda não conhece uma maneira  maravilhosa de auxiliar alguém, venha, <br />
                                         “EVANGELIZE E COOPERE COM JESUS.”</span></p></th>
                             </tr>
-                            <tr>
-
-                            </tr>
-                            <th>
-                                <th align="right" scope="col"><a href="/" target="_top"><img src={Voltar} alt="Fjords"/></a></th>
-                            </th>
                         </table>
                 </div>
             </div>

@@ -67,3 +67,10 @@
 .titulosColunas{
     color: #2F4F4F;
 }
+.linkCadastrar a{
+    flex: 1;
+    float: right;
+    margin-right: 2%;
+    color: black;
+    text-decoration: none;
+}

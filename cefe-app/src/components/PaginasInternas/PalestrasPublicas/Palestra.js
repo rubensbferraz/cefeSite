@@ -57,10 +57,13 @@ class Palestra extends Component {
                                 <td>{lista.semana}</td>
                             </tr>                            
                         )}
+                        <tr className="linkCadastrar">
+                            // @ts-ignore
+                            <td colspan="5">
+                                <a href={addPalestra} >Cadastrar Palestra</a>
+                            </td>
+                        </tr>
                     </tbody>
-                    <div>
-                        <a href={addPalestra} >Cadastrar Palestra</a>
-                    </div>
                 </table>        
             </div>
         )
