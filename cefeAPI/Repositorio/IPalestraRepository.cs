@@ -13,5 +13,5 @@ namespace cefeAPI.Repositorio
         void Remove(long id);
 
         void Update(Palestra palestra);
-    }
+    } 
 }

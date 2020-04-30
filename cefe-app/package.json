@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.1",
     "flexbox-react": "^4.4.0",
+<<<<<<< HEAD
     "formik": "^1.0.1",
     "jest": "^22.4.4",
     "jquery": "^3.5.0",
@@ -21,18 +22,20 @@
     "smartmenus-bootstrap-4": "^0.1.0",
     "smartmenus-keyboard": ">=0.4.0",
     "yup": "^0.25.1"
+=======
+    "materialize-css": "^1.0.0-rc.2",
+    "moment": "^2.22.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-draft-wysiwyg": "^1.12.13",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4"
+>>>>>>> 3ed8d8ffd14594c8b1d9c99e61c65bc969aca768
   },
   "scripts": {
-    "lint": "lynt",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "browserify": ">=9.0.3",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "lynt": "^0.2.0"
   }
 }

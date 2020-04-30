@@ -20,12 +20,35 @@ namespace cefeAPI.Migrations
                 .HasAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
                 .HasAnnotation("ProductVersion", "2.0.2-rtm-10011");
 
+            modelBuilder.Entity("cefeAPI.Models.HollNoticias", b =>
+                {
+                    b.Property<int>("IdhollNoticias")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("DataFinalPrimeira");
+
+                    b.Property<string>("DataFinalSegunda");
+
+                    b.Property<string>("DataInicioPrimeira");
+
+                    b.Property<string>("DataInicioSegunda");
+
+                    b.Property<string>("NoticiaPrimeira");
+
+                    b.Property<string>("NoticiaSegunda");
+
+                    b.HasKey("IdhollNoticias");
+
+                    b.ToTable("hollNoticias");
+                });
+
             modelBuilder.Entity("cefeAPI.Models.Palestra", b =>
                 {
                     b.Property<int>("IdPalestra")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("DataPalestra");
+                    b.Property<string>("DataPalestra")
+                        .IsRequired();
 
                     b.Property<string>("DiretorPalestra");
 
@@ -38,6 +61,22 @@ namespace cefeAPI.Migrations
                     b.HasKey("IdPalestra");
 
                     b.ToTable("palestra");
+                });
+
+            modelBuilder.Entity("cefeAPI.Models.UsuarioAdministrador", b =>
+                {
+                    b.Property<int>("IdusuarioAdm")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Login");
+
+                    b.Property<string>("Nome");
+
+                    b.Property<string>("Password");
+
+                    b.HasKey("IdusuarioAdm");
+
+                    b.ToTable("usuarioadministrador");
                 });
 #pragma warning restore 612, 618
         }

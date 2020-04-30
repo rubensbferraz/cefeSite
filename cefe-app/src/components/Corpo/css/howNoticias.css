@@ -1,0 +1,47 @@
+.containerHowNoticias{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 95%;
+    height: 169px;
+    background-color: #FFFF;
+    margin-bottom: 1.5%;
+    text-decoration: none;
+}
+
+.primeiraNoticia,
+.segundaNoticia,
+.terceiraNoticia{
+    flex:1;
+    flex-direction: row;
+    text-align: justify;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 25.33%;
+    margin: 0.5%;
+    background-color: #6fcce9;
+    border: solid 1px #ffffff;
+    text-decoration: none;
+}
+.segundaNoticia{
+    margin-left: 0px;
+    margin-right: 0px; 
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: 30%;
+    font-size: 11px;
+    margin-top: -2%;
+    color: #4b4b4b;
+}
+.small {
+    font-size: 80%;
+    font-weight: 400;
+}

@@ -1,0 +1,11 @@
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape p{
+    font-size: 0.8em;
+    font-family: 'Courier', Courier;
+    text-align: center;
+}
