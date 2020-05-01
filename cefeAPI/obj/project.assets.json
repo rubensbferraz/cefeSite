@@ -13840,19 +13840,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "D:\\wamp64\\www\\cefeSite\\cefeAPI\\cefeAPI.csproj",
       "projectName": "cefeAPI",
       "projectPath": "D:\\wamp64\\www\\cefeSite\\cefeAPI\\cefeAPI.csproj",
       "packagesPath": "C:\\Users\\Rubens\\.nuget\\packages\\",
       "outputPath": "D:\\wamp64\\www\\cefeSite\\cefeAPI\\obj\\",
-=======
-      "projectUniqueName": "C:\\desenvolvimento\\cefe\\cefeSite\\cefeAPI\\cefeAPI.csproj",
-      "projectName": "cefeAPI",
-      "projectPath": "C:\\desenvolvimento\\cefe\\cefeSite\\cefeAPI\\cefeAPI.csproj",
-      "packagesPath": "C:\\Users\\CarlosRubens\\.nuget\\packages\\",
-      "outputPath": "C:\\desenvolvimento\\cefe\\cefeSite\\cefeAPI\\obj\\",
->>>>>>> 3ed8d8ffd14594c8b1d9c99e61c65bc969aca768
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rubens\\AppData\\Roaming\\NuGet\\NuGet.Config",
